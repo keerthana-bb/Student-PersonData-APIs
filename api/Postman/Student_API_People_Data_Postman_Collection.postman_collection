@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "ed591940-f6c7-442d-8652-5d9d50e5c058",
+		"name": "Student_API_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28596367",
+		"_collection_link": "https://solar-comet-556261.postman.co/workspace/BBAssist~43a2321a-b420-4cdc-8c76-3c2119ea2263/collection/28596367-ed591940-f6c7-442d-8652-5d9d50e5c058?action=share&source=collection_link&creator=28596367"
+	},
+	"item": [
+		{
+			"name": "PeopleDetails",
+			"item": [
+				{
+					"name": "PeopleList",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/People",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"People"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonAddresses",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PersonAddresses",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PersonAddresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonEmailAddresses",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PersonEmailAddresses",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PersonEmailAddresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonGenderPronounDataChanges",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": " ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PersonGenderPronounDataChanges",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PersonGenderPronounDataChanges"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonGenderPronouns",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PersonGenderPronouns",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PersonGenderPronouns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonPhoneNumbers",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sisclientweb-700031.campusnexus.cloud/ds/campusnexus/PersonPhoneNumbers",
+							"protocol": "https",
+							"host": [
+								"sisclientweb-700031",
+								"campusnexus",
+								"cloud"
+							],
+							"path": [
+								"ds",
+								"campusnexus",
+								"PersonPhoneNumbers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

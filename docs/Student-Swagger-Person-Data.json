@@ -1,0 +1,276 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Student API",
+    "description": "API documentation for Student services."
+  },
+  "host": "sisclientweb-700031.campusnexus.cloud",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/ds/campusnexus/People": {
+      "get": {
+        "tags": ["PeopleDetails"],
+        "summary": "Retrieve list of people",
+        "description": "This endpoint retrieves a list of people.",
+        "operationId": "getPeopleList",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Person"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/ds/campusnexus/PersonAddresses": {
+      "get": {
+        "tags": ["PeopleDetails"],
+        "summary": "Retrieve list of person addresses",
+        "description": "This endpoint retrieves a list of person addresses.",
+        "operationId": "getPersonAddresses",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Address"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/ds/campusnexus/PersonEmailAddresses": {
+      "get": {
+        "tags": ["PeopleDetails"],
+        "summary": "Retrieve list of person email addresses",
+        "description": "This endpoint retrieves a list of person email addresses.",
+        "operationId": "getPersonEmailAddresses",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/EmailAddress"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/ds/campusnexus/PersonGenderPronounDataChanges": {
+      "get": {
+        "tags": ["PeopleDetails"],
+        "summary": "Retrieve list of person gender pronoun data changes",
+        "description": "This endpoint retrieves a list of person gender pronoun data changes.",
+        "operationId": "getPersonGenderPronounDataChanges",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GenderPronounDataChange"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/ds/campusnexus/PersonGenderPronouns": {
+      "get": {
+        "tags": ["PeopleDetails"],
+        "summary": "Retrieve list of person gender pronouns",
+        "description": "This endpoint retrieves a list of person gender pronouns.",
+        "operationId": "getPersonGenderPronouns",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GenderPronoun"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/ds/campusnexus/PersonPhoneNumbers": {
+      "get": {
+        "tags": ["PeopleDetails"],
+        "summary": "Retrieve list of person phone numbers",
+        "description": "This endpoint retrieves a list of person phone numbers.",
+        "operationId": "getPersonPhoneNumbers",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PhoneNumber"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "Person": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "Address": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      }
+    },
+    "EmailAddress": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "GenderPronounDataChange": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "changeDate": {
+          "type": "string"
+        },
+        "oldPronoun": {
+          "type": "string"
+        },
+        "newPronoun": {
+          "type": "string"
+        }
+      }
+    },
+    "GenderPronoun": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "pronoun": {
+          "type": "string"
+        }
+      }
+    },
+    "PhoneNumber": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "number": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "basicAuth": {
+      "type": "basic"
+    }
+  }
+}
